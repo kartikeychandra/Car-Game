@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Permanent+Marker&family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.bg{
+    background-image: url(bg.jpg);
+    background-size:cover;
+    background-repeat: repeat-y;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+#race{
+    width: 80px;
+    margin-left: 370px;
+}
+#blue{
+    width: 80px;   
+}
+.blueimg{
+    position: absolute;
+    height: 100vh;
+    margin-top: 0px;
+    animation: carMoving 1.5s linear infinite;
+}
+.raceimg{
+    margin-top: 520px;
+    position: absolute;
+}
+#burst{
+    width: 200px;
+    visibility: hidden;
+}
+.burst{
+    margin-top: 450px;
+    position: absolute;
+    
+}
+#restart{
+    margin-top: 70px;
+    z-index: 100000;
+    position: absolute;
+    opacity: 10;
+    border-color: transparent;
+}
+#gameover{
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 150px;
+    font-size: 100px;
+}
+.gameover{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    opacity: 0.5;
+    visibility: hidden;
+}
+#restarticon{
+    width: 80px;
+}
+@keyframes carMoving {
+    100%{
+        margin-top: 1000px;
+    }
+    
+}
+
